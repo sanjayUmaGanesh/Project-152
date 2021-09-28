@@ -1,0 +1,18 @@
+<!Doctype html>
+<html>
+    <head>
+        <script src = "https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src = "Log.js"></script>
+    </head>
+    <body>
+        <a-scene background = "color: white">
+            <a-camera wasd-controls-enabled = "True" postion= "5 0 20"  ></a-camera>
+            <a-assets timeout="10000">
+                <a-assest-item id = "car" src = "./Car/L.obj"></a-assest-item>
+                <a-assest-item id = "car-mtl" src = "./Car/obj.mtl"></a-assest-item>
+            </a-assets>
+            <a-entity obj-model = "obj: #car; mtl: #car-mtl"  position = "5 0 0" scale = "0.05 0.05 0.05" rotation = "-90 0 0" move></a-entity>
+            
+        
+    </body>
+</html>
